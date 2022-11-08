@@ -19,7 +19,12 @@ public class Matrix {
 
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix.length; column++) {
-                System.out.print("\t" + matrix[row][column]);
+                if (row == (matrix.length - column - 1)) {
+                    System.out.print("\t" + matrix[row][column] + "\"");
+                }
+                else {
+                    System.out.print("\t" + matrix[row][column]);
+                }
             }
 
             System.out.println("");
