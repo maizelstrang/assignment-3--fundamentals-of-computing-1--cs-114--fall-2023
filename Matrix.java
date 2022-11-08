@@ -54,17 +54,29 @@ public class Matrix {
     }
 
     //--------------------------------------------------------------------------
+    //  Swaps the value at (x1, y1) in the matrix with the value at (x2, y2).
+    //--------------------------------------------------------------------------
+    private void swap(int x1, int y1, int x2, int y2) {
+        int temp = matrix[x1][y1];
+        matrix[x1][y1] = matrix[x2][y2];
+        matrix[x2][y2] = temp;
+    }
+
+    //--------------------------------------------------------------------------
     //  Flips the matrix across the diagonal that runs from top right
     //  to bottom left.
     //--------------------------------------------------------------------------
     public void flipMatrix() {
-        System.out.println("\tFlipping the matrix... ");
+        System.out.print("\tFlipping the matrix... ");
 
-        for (int row = 0; row < (matrix.length - 2); row++) {
-            for (int column = 0; column < (matrix.length - row - 2); column++) {
-                swap(row, column, (matrix.length - column - 1),
-                    (matrix.length - row - 1));
+        for (int column = 0; column < (matrix.length - 1); column++) {
+            for (int row = 0; row < (matrix.length - column - 1); row++) {
+                swap(row, column, (matrix.length - row - 1),
+                    (matrix.length - column - 1));
             }
         }
+
+        System.out.println("Matrix flipped.");
+        System.out.println();
     }
 }
