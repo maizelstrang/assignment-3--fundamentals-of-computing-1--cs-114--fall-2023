@@ -19,6 +19,13 @@ public class RunMatrix {
         }
 
         Matrix matrix = new Matrix(matrixSize);
+
+        System.out.println("\tThe empty matrix:");
+        matrix.printMatrix();
+
+        matrix.populateMatrix();
+
+        System.out.println("\tThe populated matrix:");
         matrix.printMatrix();
     }
 }
