@@ -19,7 +19,7 @@ public class RunMatrix {
 
         while (matrixSize < 2) {
             System.out.println("\tInvalid -- input must be at least 2.");
-            System.out.println("\n");
+            System.out.println();
 
             System.out.print("\tEnter the dimension of the matrix: ");
             matrixSize = input.nextInt();
