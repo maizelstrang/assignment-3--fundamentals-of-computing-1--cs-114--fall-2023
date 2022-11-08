@@ -15,8 +15,6 @@ public class Matrix {
     //  Prints out the matrix to the terminal.
     //------------------------------------------------------------------
     public void printMatrix() {
-        System.out.println("\tThe empty matrix:");
-
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix.length; column++) {
                 if (row == (matrix.length - column - 1)) {
@@ -30,6 +28,22 @@ public class Matrix {
             System.out.println("");
         }
 
+        System.out.println();
+    }
+
+    //------------------------------------------------------------------
+    //  Populates the matrix with values from 1 - (size x size).
+    //------------------------------------------------------------------
+    public void populateMatrix() {
+        System.out.print("\tPopulating the matrix... ");
+
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix.length; column++) {
+                matrix[row][column] = (column + (row * matrix.length) + 1);
+            }
+        }
+
+        System.out.println("Matrix populated.");
         System.out.println();
     }
 }
