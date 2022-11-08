@@ -1,3 +1,10 @@
+//******************************************************************************
+//  RunMatrix.java
+//
+//  Uses the Matrix class to generate a matrix from user input and perform
+//  various operations on the matrix.
+//******************************************************************************
+
 import java.util.Scanner;
 
 public class RunMatrix {
