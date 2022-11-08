@@ -34,5 +34,10 @@ public class RunMatrix {
 
         System.out.println("\tThe populated matrix:");
         matrix.printMatrix();
+
+        matrix.flipMatrix();
+
+        System.out.println("\tThe flipped matrix:");
+        matrix.printMatrix();
     }
 }
