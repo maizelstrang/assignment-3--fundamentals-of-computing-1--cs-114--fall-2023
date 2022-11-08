@@ -39,5 +39,7 @@ public class RunMatrix {
 
         System.out.println("\tThe flipped matrix:");
         matrix.printMatrix();
+
+        input.close();
     }
 }
