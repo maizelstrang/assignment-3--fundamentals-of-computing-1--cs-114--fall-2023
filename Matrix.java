@@ -14,7 +14,7 @@ public class Matrix {
         matrix = new int[size][size];
 
         System.out.println("\tGenerated a " + size + " x " + size +
-                           " matrix.\n");
+                            " matrix.\n");
     }
 
     //--------------------------------------------------------------------------
@@ -24,7 +24,8 @@ public class Matrix {
         for (int row = 0; row < matrix.length; row++) {
             for (int column = 0; column < matrix.length; column++) {
                 if (row == (matrix.length - column - 1)) {
-                    System.out.print("\t" + matrix[row][column] + "\"");
+                    System.out.print("\t\u001B[33m" + matrix[row][column]
+                                    + "\u001B[0m");
                 }
                 else {
                     System.out.print("\t" + matrix[row][column]);
