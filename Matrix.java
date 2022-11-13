@@ -1,5 +1,7 @@
 public class Matrix {
-    int[] matrix = new int[userInput];
+    int size;
+
+    int[][] matrix = new int[size][size];
 
 
 
