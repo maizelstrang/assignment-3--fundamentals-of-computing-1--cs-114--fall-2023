@@ -6,6 +6,10 @@ public class Matrix {
         return size;
     }
 
+    private void swap(){
+
+    }
+
     int[][] matrix = new int[size][size];
 
 
