@@ -35,11 +35,11 @@ public class Matrix {
      }
 
       public void transpose() {
-          for(int i = 0; i < size; i++) {
-              for(int j = 0; j < i+1; j++) {
-                int t = matrix[i][size - j - 1];
-                matrix[i][size-j-1] = matrix[i][j];
-                matrix[i][j] = t;
+          for(int i = 0; i < matrix.length; i++) {
+              for(int j = i + 1; j < matrix.length; j++) {
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = t;
               }
 
           }
