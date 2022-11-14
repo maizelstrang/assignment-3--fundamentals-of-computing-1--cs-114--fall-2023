@@ -13,7 +13,7 @@ public class RunMatrix {
         int matrixSize;
 
         System.out.println();
-        System.out.print("\tEnter the dimension of the matrix: ");
+        System.out.print("\tEnter the size of the matrix: ");
         matrixSize = input.nextInt();
         System.out.println();
 
@@ -21,7 +21,7 @@ public class RunMatrix {
             System.out.println("\tInvalid -- input must be at least 2.");
             System.out.println();
 
-            System.out.print("\tEnter the dimension of the matrix: ");
+            System.out.print("\tEnter the size of the matrix: ");
             matrixSize = input.nextInt();
             System.out.println();
         }
