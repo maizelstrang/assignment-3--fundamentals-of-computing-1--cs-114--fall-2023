@@ -6,6 +6,7 @@ public class RunMatrix {
         int size = input.nextInt();
 
 
+
         Matrix userMatrix;
         userMatrix = new Matrix();
 
