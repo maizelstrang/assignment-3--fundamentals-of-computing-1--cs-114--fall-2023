@@ -23,6 +23,7 @@ public class RunMatrix {
 
             System.out.print("\tEnter the dimension of the matrix: ");
             matrixSize = input.nextInt();
+            System.out.println();
         }
 
         Matrix matrix = new Matrix(matrixSize);
