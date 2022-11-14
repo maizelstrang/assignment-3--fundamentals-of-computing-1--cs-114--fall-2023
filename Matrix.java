@@ -1,17 +1,15 @@
 public class Matrix {
-    int size;
+    private int size;
 
-    public int getSize(){
-        size = 3;
-        return size;
-    }
-
-    private void swap(int x1, int x2, int y1, int y2){
-
-    }
+    // public static int getSize(){;
+    //     return size;
+    // }
 
     int[][] matrix = new int[size][size];
 
 
 
+
+    // private void swap(int x1, int x2, int y1, int y2){
+    // }
 }
