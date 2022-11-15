@@ -15,7 +15,7 @@ public class RunMatrix {
 
         //System.out.println("Re-enter the number selected");
         //int c = sc.nextInt();
-
+        //rc is the size of the matrix in rows and columns
         //Load table with values
         int[][]table = new int[rc][rc];
         for (int row = 0; row < table.length; row++) {
@@ -33,11 +33,27 @@ public class RunMatrix {
             }
                 System.out.println();
         }
-        //Print the table
+        //Print the original table
         System.out.println("Here is the Original table");
+        int count = 0;
         for (int row = 0; row < table.length; row++) {
             for (int col = 0; col < table[row].length; col++){
-                table[row][col] = row * col;
+                //table[row][col] = row + col;
+                table[row][col] = count;
+                count++;
+                System.out.print(table[row][col] + "\t");
+            }
+                System.out.println();
+
+        }
+        //Print the Reverse table
+        System.out.println("Here is the Reverse table");
+        count = (rc*rc)-1;
+        for (int row = 0; row < table.length; row++) {
+            for (int col = 0; col < table[row].length; col++){
+                //table[row][col] = row + col;
+                table[row][col] = count;
+                count--;
                 System.out.print(table[row][col] + "\t");
             }
                 System.out.println();
