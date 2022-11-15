@@ -1,6 +1,9 @@
 public class Matrix {
     private int[][] matrix;
     private int matrixSize;
+    final String COLOR = "\033[33m";
+    final String RESET = "\033[39m";
+
 
 
 
@@ -22,7 +25,8 @@ public class Matrix {
             System.out.println();
 
             for(int col = 0; col < matrixSize; col++){
-            System.out.printf("%d%s", matrix[row][col], "\t");
+
+                System.out.printf("%d%s", matrix[row][col], "\t");
             }
         }
     }
