@@ -24,13 +24,13 @@ public class Matrix {
 
 
     public void printMatrix(){
-    for (int row = 0; row< matrixSize; row++){
-        System.out.println();
-        for(int col = 0; col < matrixSize; col++){
-        System.out.printf("%d", matrix[row][col]);
-            // System.out.println(matrix[row][col]);
+        for (int row = 0; row< matrixSize; row++){
+            System.out.println();
+
+            for(int col = 0; col < matrixSize; col++){
+            System.out.printf("%d%s", matrix[row][col], " ");
+            }
         }
-    }
 
     }
 
