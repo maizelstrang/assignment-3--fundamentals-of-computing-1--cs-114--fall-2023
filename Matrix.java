@@ -4,14 +4,14 @@ public class Matrix {
     final String COLOR = "\033[33m";
     final String RESET = "\033[39m";
 
-//-----------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------
     public void createMatrix (int size){
         matrix = new int[size][size];
         matrixSize = size;
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
 
-//-----------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------
     public void printMatrix(){
         int diagongalHighlight = matrixSize-1;
         for (int row = 0; row < matrixSize ; row++ ){
@@ -35,9 +35,10 @@ public class Matrix {
             }
     }
 
-//-----------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------
     public void populateMatrix(){
         int diagongalHighlight = matrixSize-1;
+
         for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
                 matrix[row][col] += (col+row);
@@ -58,5 +59,9 @@ public class Matrix {
                 }
             }
         }
+    }
+    //--------------------------------------------------------------------------------------------------
+    private void swapMatrix(int x1, int y1, int x2, int y2){
+
     }
 }
