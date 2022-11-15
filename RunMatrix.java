@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class RunMatrix {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Please input the desired matrix size:");
+        System.out.println("\nPlease input the desired matrix size:");
         int inputSize = input.nextInt();
 
 
@@ -12,7 +12,7 @@ public class RunMatrix {
 
         // userMatrix.getMatrixSize();
         userMatrix.createMatrix(inputSize);
-        userMatrix.populateMatrix();
-        userMatrix.printMatrix();
+        userMatrix.defaultMatrix();
+        userMatrix.printDefaultMatrix();
     }
 }
