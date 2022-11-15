@@ -4,12 +4,14 @@ public class Matrix {
     final String COLOR = "\033[33m";
     final String RESET = "\033[39m";
 
+//
     public void createMatrix (int size){
         matrix = new int[size][size];
         matrixSize = size;
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
 
+//
     public void printMatrix(){
         for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
@@ -26,6 +28,7 @@ public class Matrix {
         }
     }
 
+//
     public void populateMatrix(){
         for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
@@ -42,15 +45,5 @@ public class Matrix {
         }
     }
 
-    // public void printMatrix(){
-    //     System.out.println("\nPrinting matrix with default values:");
-    //     for (int row = 0; row< matrixSize; row++){
-    //         System.out.println();
-
-    //         for(int col = 0; col < matrixSize; col++){
-    //         System.out.printf("%d%s", matrix[row][col], "\t");
-    //         }
-    //     }
-    // }
 
 }
