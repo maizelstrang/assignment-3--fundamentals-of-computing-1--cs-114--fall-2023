@@ -15,23 +15,23 @@ public class Matrix {
     }
 
     public void populateMatrix(){
-        for (int col = 0; col < matrixSize ; col++ ){
-            for (int row = 0; row < matrixSize; row++){
-                matrix[col][row] = 0;
-                System.out.println(matrix[col][row]);
+        for (int row = 0; row < matrixSize ; row++ ){
+            for (int col = 0; col < matrixSize; col++){
+                matrix[row][col] = 0;
             }
         }
     }
 
 
     public void printMatrix(){
-        int diagonal = matrixSize-1;
-
-        for (int col = 0; col <= matrixSize ; col++ ){
-            for (int row = 0; row < matrixSize; row++){
-
-            }
+    for (int row = 0; row< matrixSize; row++){
+        System.out.println();
+        for(int col = 0; col < matrixSize; col++){
+        System.out.printf("%d", matrix[row][col]);
+            // System.out.println(matrix[row][col]);
         }
+    }
+
     }
 
 
