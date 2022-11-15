@@ -13,20 +13,25 @@ public class Matrix {
 
 //-----------------------------------------------------------------------------------------------------
 public void printMatrix(){
-        for (int row = 0; row < matrixSize ; row++ ){
+    int diagongalHighlight = matrixSize-1;
+    for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
                 matrix[row][col] = 0;
             }
-        }
+    }
     System.out.println("\nPrinting matrix with default values:");
         for (int row = 0; row< matrixSize; row++){
             System.out.println();
-
             for(int col = 0; col < matrixSize; col++){
-            System.out.printf("%d%s", matrix[row][col], "\t");
+                if (diagongalHighlight == col){
+                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                diagongalHighlight--;
+                } else {
+                System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+                }
             }
         }
-    }
+}
 
 //-----------------------------------------------------------------------------------------------------
 public void populateMatrix(){
