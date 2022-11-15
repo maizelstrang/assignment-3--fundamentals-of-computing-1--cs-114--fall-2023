@@ -1,27 +1,34 @@
 public class Matrix {
-    private int size;
     private int[][] matrix;
-    int matrixSize;
+    private int matrixSize;
+    int row, col;
 
 
     public int[][] getMatrixSize(){
         return matrix;
     }
 
-    public void setMatrixSize(int inputSize){
-        this.size = inputSize;
-    }
 
-    public void createMatrix (){
-        int[][] matrix = new int[size][size];
+    public void createMatrix (int size){
+        matrix = new int[size][size];
         matrixSize = size;
         System.out.println("Created Matrix size is: " + size);
     }
 
     public void populateMatrix(){
-        for (int col = 0; col < matrixSize ; col++ ){
-            for (int row = 0; col < matrixSize; row++ ){
+        for (col = 0; col < matrixSize ; col++ ){
+            for (row = 0; row < matrixSize; row++ ){
+                matrix[col][row] = 0;
             }
         }
     }
+
+
+    // public void printMatrix(){
+    //     for (col = 0; col <= matrixSize ; col++ ){
+    //         System.out.println(matrix[col][row]);
+    //     }
+    // }
+
+
 }
