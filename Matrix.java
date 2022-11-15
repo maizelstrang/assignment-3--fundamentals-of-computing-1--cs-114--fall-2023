@@ -20,12 +20,14 @@ public class Matrix {
                 }
         }
         System.out.println("\nPrinting matrix with default values:");
-            for (int row = 0; row< matrixSize; row++){
+
+        for (int row = 0; row< matrixSize; row++){
                 System.out.println();
                 for(int col = 0; col < matrixSize; col++){
                     if (diagongalHighlight == col){
                     System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                     diagongalHighlight--;
+
                     } else {
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                     }
@@ -41,7 +43,10 @@ public class Matrix {
                 matrix[row][col] += (col+row);
             }
         }
-        System.out.println("\nPrinting matrix with default values:");
+
+        System.out.println("\n\nPopulating Matrix...matrix populated");
+        System.out.println("\nPrinting matrix:");
+
         for (int row = 0; row< matrixSize; row++){
             System.out.println();
             for(int col = 0; col < matrixSize; col++){
