@@ -10,8 +10,8 @@ public class RunMatrix {
         Matrix userMatrix;
         userMatrix = new Matrix();
 
-        // userMatrix.setMatrixSize(inputSize);\
-        userMatrix.getMatrixSize();
+        // userMatrix.setMatrixSize(inputSize);
+        // userMatrix.getMatrixSize();
         userMatrix.createMatrix(inputSize);
         userMatrix.populateMatrix();
     }
