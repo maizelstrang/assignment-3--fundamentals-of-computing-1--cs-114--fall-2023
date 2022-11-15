@@ -3,10 +3,6 @@ public class Matrix {
     private int matrixSize;
 
 
-    public int[][] getMatrixSize(){
-        return matrix;
-    }
-
 
     public void createMatrix (int size){
         matrix = new int[size][size];
@@ -14,16 +10,14 @@ public class Matrix {
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
 
-    public void defaultMatrix(){
+    public void populateMatrix(){
         for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
                 matrix[row][col] = 0;
             }
         }
-    }
 
-    public void printDefaultMatrix(){
-        System.out.println("\nPrinting matrix with default values:");
+    System.out.println("\nPrinting matrix with default values:");
         for (int row = 0; row< matrixSize; row++){
             System.out.println();
 
@@ -33,10 +27,22 @@ public class Matrix {
         }
     }
 
-    public void printMatrix(){
+
+    public void createMatrix(){
         for (int row = 0; row < matrixSize ; row++ ){
             for (int col = 0; col < matrixSize; col++){
-                matrix[row][col] = 0;
+                matrix[row][col] += (col+row);
+            }
+        }
+    }
+
+    public void printMatrix(){
+        System.out.println("\nPrinting matrix with default values:");
+        for (int row = 0; row< matrixSize; row++){
+            System.out.println();
+
+            for(int col = 0; col < matrixSize; col++){
+            System.out.printf("%d%s", matrix[row][col], "\t");
             }
         }
     }
