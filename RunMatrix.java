@@ -11,6 +11,7 @@ public class RunMatrix {
         userMatrix = new Matrix();
 
         userMatrix.createMatrix(inputSize);
+        userMatrix.printMatrix();
         userMatrix.populateMatrix();
 
     }
