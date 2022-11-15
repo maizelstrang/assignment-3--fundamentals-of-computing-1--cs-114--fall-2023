@@ -1,7 +1,6 @@
 public class Matrix {
     private int[][] matrix;
     private int matrixSize;
-    int row, col;
 
 
     public int[][] getMatrixSize(){
@@ -16,8 +15,8 @@ public class Matrix {
     }
 
     public void populateMatrix(){
-        for (col = 0; col < matrixSize ; col++ ){
-            for (row = 0; row < matrixSize; row++){
+        for (int col = 0; col < matrixSize ; col++ ){
+            for (int row = 0; row < matrixSize; row++){
                 matrix[col][row] = 0;
                 System.out.println(matrix[col][row]);
             }
@@ -25,11 +24,15 @@ public class Matrix {
     }
 
 
-    // public void printMatrix(){
-    //     for (col = 0; col <= matrixSize ; col++ ){
-    //         System.out.println(matrix[col][row]);
-    //     }
-    // }
+    public void printMatrix(){
+        int diagonal = matrixSize-1;
+
+        for (int col = 0; col <= matrixSize ; col++ ){
+            for (int row = 0; row < matrixSize; row++){
+
+            }
+        }
+    }
 
 
 }
