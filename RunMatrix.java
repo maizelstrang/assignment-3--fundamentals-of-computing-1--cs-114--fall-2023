@@ -14,5 +14,6 @@ public class RunMatrix {
         // userMatrix.getMatrixSize();
         userMatrix.createMatrix(inputSize);
         userMatrix.populateMatrix();
+        userMatrix.printMatrix();
     }
 }
