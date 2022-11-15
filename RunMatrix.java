@@ -6,6 +6,12 @@ public class RunMatrix {
     //  integer values, then prints them out.
     // -----------------------------------------------------------------
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println();
+
+
         int[][] table = new int[5][10];
 
         // Load the table with values
