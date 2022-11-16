@@ -6,5 +6,9 @@ public class RunMatrix {
 
         System.out.print("Please enter the size of your matrix: ");
         String SizeInput = SizeScan.nextLine();
+        System.out.println();
+        System.out.println();
+        System.out.println("The size of your matrix is: " +
+                            SizeInput + " x " + SizeInput);
     }
 }
