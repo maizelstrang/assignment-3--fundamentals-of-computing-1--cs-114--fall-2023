@@ -5,8 +5,7 @@ public class Matrix {
     private int[][] array;
 
     public int createTable(int size) {
-        return
-        array = table;
+        return size;
 
     }
     public void populateTable() {
