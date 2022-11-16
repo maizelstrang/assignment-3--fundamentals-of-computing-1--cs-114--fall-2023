@@ -1,5 +1,4 @@
 import java.util.*;
-
 import Matrix.Matrix;
 
 public class RunMatrix {
@@ -14,6 +13,11 @@ public class RunMatrix {
         System.out.println();
         System.out.println("The size of your matrix is: " +
                             SizeInput + " x " + SizeInput);
-        table1.returnTable();
+        // table1.returnTable();
+        char[][] twoDarray = returnTable(al);
+    }
+
+    private static char[][] returnTable(ArrayList<String> al) {
+        return null;
     }
 }
