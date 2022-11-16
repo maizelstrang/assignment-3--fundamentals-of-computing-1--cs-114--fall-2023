@@ -6,7 +6,7 @@ public class Matrix {
 
     public int createTable(int size) {
         return size;
-
+        //make table here
     }
     public void populateTable() {
         for (int row = 0; row < array.length; row++){
