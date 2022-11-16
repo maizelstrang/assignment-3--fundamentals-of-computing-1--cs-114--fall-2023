@@ -1,6 +1,8 @@
 public class Matrix {
+    private int[][] table;
+
     public createTable() {
-        int[][] table = new int[5][5];
+        table = new int[5][5];
         populateTable();
     }
     public populateTable() {
@@ -10,4 +12,5 @@ public class Matrix {
             }
         }
     }
+    public
 }
