@@ -16,6 +16,8 @@ public class Matrix {
         int point1 = matrix[x2][y2];
         int point2 = temporary;
 
+        matrix[x1][y1] = point1;
+        matrix[x2][y2] = point2;
     }
 
     //-----------------------------------------------------------------------------------------------------
@@ -74,7 +76,6 @@ public class Matrix {
         int x2 = matrixSize-1;
         int y2 = x2;
         System.out.print("\n\nFlipping Matrix..Matrix Flipped");
-        // int[][] matrixFlipped = matrix;
         for (int row = 0; row < matrixSize ; row++){
             System.out.println();
             for (int col = 0; col < matrixSize; col++){
@@ -85,6 +86,7 @@ public class Matrix {
                     swapMatrix(row, col, x2 ,y2);
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                 }
+
             }
         }
     }
