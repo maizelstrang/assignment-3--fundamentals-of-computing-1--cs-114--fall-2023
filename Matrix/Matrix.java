@@ -4,8 +4,10 @@ import java.util.*;
 public class Matrix {
     private int[][] array;
 
-    public void createTable(int [][] table) {
+    public int createTable(int size) {
+        return
         array = table;
+
     }
     public void populateTable() {
         for (int row = 0; row < array.length; row++){
@@ -14,21 +16,13 @@ public class Matrix {
             }
         }
     }
-    public static char[][] returnTable(ArrayList<String> mapArray) {
-        char [] elementSplit = null;
-        char twoDarray [][] = new char[mapArray.size()][];
-        for(int i = 0; i < mapArray.size(); i++){
-            elementSplit = (mapArray.get(i)).toCharArray();
-            twoDarray [i] = elementSplit;
-            System.out.println(Arrays.toString(elementSplit));
-        }
-        return twoDarray;
+    public void returnTable() {
 
-        // for(int i=0;i<array.length;i++) {
-        //     for(int j=0;j<array[i].length;j++) {
-        //         System.out.println(array[i][j]);
-        //     }
-        // }
+        for(int i=0;i<array.length;i++) {
+            for(int j=0;j<array[i].length;j++) {
+                System.out.println(array[i][j]);
+            }
+        }
     }
 }
 
