@@ -3,7 +3,6 @@ public class Matrix {
 
     public void createTable(int size) {
         table = new int[size][size];
-        populateTable();
     }
     public void populateTable() {
         for (int row = 0; row < table.length; row++){
