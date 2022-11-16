@@ -1,16 +1,18 @@
 public class Matrix {
     private int[][] table;
 
-    public createTable() {
-        table = new int[5][5];
+    public void createTable(int size) {
+        table = new int[size][size];
         populateTable();
     }
-    public populateTable() {
+    public void populateTable() {
         for (int row = 0; row < table.length; row++){
             for (int col = 0; col < table[row].length; col++){
                 table[row][col] = row*10+col;
             }
         }
     }
-    public
+    public void printTable() {
+
+    }
 }
