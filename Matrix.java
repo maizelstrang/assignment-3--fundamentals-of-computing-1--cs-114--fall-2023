@@ -10,6 +10,14 @@ public class Matrix {
         matrixSize = size;
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
+    //-----------------------------------------------------------------------------------------------------
+    private void swapMatrix(int x1, int y1, int x2, int y2){
+        int point1 = this.matrix[x1][y1];
+        int point2 = this.matrix[x2][y2];
+
+        this.matrix[x1][y1] = point1;
+        this.matrix[x1][y1] = point2;
+    }
 
     //-----------------------------------------------------------------------------------------------------
     public void printMatrix(){
@@ -62,7 +70,7 @@ public class Matrix {
         }
     }
     //--------------------------------------------------------------------------------------------------
-    private void swapMatrix(int x1, int y1, int x2, int y2){
+    public void flipMatrix(){
         System.out.print("\n\nFlipping Matrix..Matrix Flipped");
         int[][] matrixCopy = matrix;
         for (int row = 0; row < matrixSize ; row++){

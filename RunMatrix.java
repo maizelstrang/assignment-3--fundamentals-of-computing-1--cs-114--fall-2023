@@ -13,7 +13,7 @@ public class RunMatrix {
         userMatrix.createMatrix(inputSize);
         userMatrix.printMatrix();
         userMatrix.populateMatrix();
-        // userMatrix.swapMatrix();
+        userMatrix.flipMatrix();
 
     }
 }
