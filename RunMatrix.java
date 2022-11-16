@@ -3,7 +3,7 @@ import Matrix.Matrix;
 
 public class RunMatrix {
     public static void main(String[] args){
-        Matrix table1 = new createTable();
+        Matrix table1 = new createTable([3][3]);
 
         Scanner SizeScan = new Scanner(System.in);
 
