@@ -63,6 +63,12 @@ public class Matrix {
     }
     //--------------------------------------------------------------------------------------------------
     private void swapMatrix(int x1, int y1, int x2, int y2){
+        System.out.print("\n\nFlipping Matrix..Matrix Flipped");
+        int[][] matrixCopy = matrix;
+        for (int row = 0; row < matrixSize ; row++){
+            for (int col = 0; col < matrixSize; col++){
 
+            }
+        }
     }
 }
