@@ -11,7 +11,7 @@ public class Matrix {
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
     //-----------------------------------------------------------------------------------------------------
-    private void swapMatrix(int x1, int y1, int x2, int y2){
+    private void swap(int x1, int y1, int x2, int y2){
         int temporary = matrix[x1][y1];
         int point1 = matrix[x2][y2];
         int point2 = temporary;
@@ -81,7 +81,7 @@ public class Matrix {
                 System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                 diagonalHighlight--;
                 } else {
-                    swapMatrix(row, col, matrixSize-1, matrixSize-1);
+                    swap(row, col, matrixSize, matrixSize-1);
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
 
                 }
