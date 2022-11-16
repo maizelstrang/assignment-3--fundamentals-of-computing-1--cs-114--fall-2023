@@ -13,10 +13,9 @@ public class Matrix {
     //-----------------------------------------------------------------------------------------------------
     private void swapMatrix(int x1, int y1, int x2, int y2){
         int temporary = matrix[x1][y1];
-        int point2 = matrix[x1][y1];
-        int point1 = temporary;
-        // matrix[x2][y2] = point1;
-        // matrix[x1][y1] = point2;
+        int point1 = matrix[x2][y2];
+        int point2 = temporary;
+
     }
 
     //-----------------------------------------------------------------------------------------------------
@@ -72,15 +71,19 @@ public class Matrix {
     //--------------------------------------------------------------------------------------------------
     public void flipMatrix(){
         int diagonalHighlight = matrixSize-1;
+        int x2 = matrixSize-1;
+        int y2 = x2;
         System.out.print("\n\nFlipping Matrix..Matrix Flipped");
-        int[][] matrixCopy = matrix;
+        int[][] matrixFlipped = matrix;
         for (int row = 0; row < matrixSize ; row++){
+            System.out.println();
             for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
-                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                System.out.printf("%s%d%s", COLOR, matrixFlipped[row][col], "\t");
                 diagonalHighlight--;
                 } else {
-
+                    swapMatrix(row, col, x2 ,y2);
+                    System.out.printf("%s%d%s", RESET, matrixFlipped[row][col], "\t");
                 }
             }
         }
