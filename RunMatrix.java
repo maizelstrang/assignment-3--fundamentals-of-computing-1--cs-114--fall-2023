@@ -23,11 +23,31 @@ public class RunMatrix {
             }
         }
 
-
         // Print the table
         for (int row = 0; row < DefaultMatrix.length; row++) {
             for (int col = 0; col < DefaultMatrix[row].length; col++) {
                 System.out.print (DefaultMatrix[row][col] + "\t");
+            }
+
+                System.out.println();
+        }
+
+        //Now the matrix is being populated with values and then printed again.
+
+        System.out.println("\n" + "Your matrix is now being populated... " + "\n");
+
+        int[][] PopulatedMatrix = new int[Userinput][Userinput];
+        // Load the table with values
+        for (int row = 0; row < PopulatedMatrix.length; row++) {
+            for (int col = 0; col < PopulatedMatrix[row].length; col++) {
+                PopulatedMatrix[row][col] = (row * Userinput + 1) + col;
+            }
+        }
+
+        // Print the table
+        for (int row = 0; row < PopulatedMatrix.length; row++) {
+            for (int col = 0; col < PopulatedMatrix[row].length; col++) {
+                System.out.print (PopulatedMatrix[row][col] + "\t");
             }
 
                 System.out.println();
