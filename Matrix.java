@@ -71,21 +71,44 @@ public class Matrix {
         }
     }
     //--------------------------------------------------------------------------------------------------
+    // public void flipMatrix(){
+    //     int diagonalHighlight = matrixSize-1;
+    //     System.out.print("\n\nFlipping Matrix...Matrix Flipped");
+    //     for (int row = 0; row < matrixSize ; row++){
+    //         System.out.println();
+    //         for (int col = 0; col < matrixSize; col++){
+    //             if (diagonalHighlight == col){
+    //             System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+    //             diagonalHighlight--;
+    //             } else {
+    //                 swap(row, col, matrixSize-1, matrixSize-1);
+    //                 System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+
+    //             }
+
+    //         }
+    //     }
+    // }
+    //--------------------------------------------------------------------------------------------------
     public void flipMatrix(){
         int diagonalHighlight = matrixSize-1;
+        int x2 = matrixSize-1;
+        int y2 = matrixSize-1;
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
         for (int row = 0; row < matrixSize ; row++){
             System.out.println();
             for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
-                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                diagonalHighlight--;
+                    System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                    diagonalHighlight--;
                 } else {
-                    swap(row, col, matrixSize, matrixSize-1);
+                    swap(row, col, x2, y2);
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
 
+                    if(y2 > 0){
+                        y2--;
+                    }
                 }
-
             }
         }
     }
