@@ -12,7 +12,7 @@ public class Matrix {
             }
         }
     }
-    public void printTable() {
-
+    public int[][] returnTable() {
+        return table;
     }
 }
