@@ -1,10 +1,9 @@
 import java.util.Scanner;
-
 import Matrix.Matrix;
 
 public class RunMatrix {
     public static void main(String[] args){
-        Matrix table1 = new createTable;
+        Matrix table1 = new createTable();
 
         Scanner SizeScan = new Scanner(System.in);
 
