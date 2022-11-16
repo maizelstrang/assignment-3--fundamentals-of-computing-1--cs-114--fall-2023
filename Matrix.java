@@ -12,7 +12,9 @@ public class Matrix {
             }
         }
     }
-    public int[][] returnTable() {
+    public int[][] returnTable(int RowIndex, int ColIndex) {
         return table;
     }
 }
+
+//https://stackoverflow.com/questions/20519100/java-how-to-return-in-a-method-multidimensional-array-without-aliasing
