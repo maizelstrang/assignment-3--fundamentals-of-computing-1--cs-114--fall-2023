@@ -73,8 +73,6 @@ public class Matrix {
     //--------------------------------------------------------------------------------------------------
     public void flipMatrix(){
         int diagonalHighlight = matrixSize-1;
-        int xSwapCounter = matrixSize-1;
-        int ySwapCounter = matrixSize-1;
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
         for (int row = 0; row < matrixSize ; row++){
             System.out.println();
@@ -83,7 +81,7 @@ public class Matrix {
                 System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                 diagonalHighlight--;
                 } else {
-                    swapMatrix(row, col, xSwapCounter, ySwapCounter);
+                    swapMatrix(row, col, matrixSize-1, matrixSize-1);
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
 
                 }
