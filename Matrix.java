@@ -12,11 +12,11 @@ public class Matrix {
     }
     //-----------------------------------------------------------------------------------------------------
     private void swapMatrix(int x1, int y1, int x2, int y2){
-        int point1 = this.matrix[x1][y1];
-        int point2 = this.matrix[x2][y2];
-
-        this.matrix[x1][y1] = point1;
-        this.matrix[x1][y1] = point2;
+        int temporary = matrix[x1][y1];
+        int point2 = matrix[x1][y1];
+        int point1 = temporary;
+        // matrix[x2][y2] = point1;
+        // matrix[x1][y1] = point2;
     }
 
     //-----------------------------------------------------------------------------------------------------
@@ -71,11 +71,17 @@ public class Matrix {
     }
     //--------------------------------------------------------------------------------------------------
     public void flipMatrix(){
+        int diagonalHighlight = matrixSize-1;
         System.out.print("\n\nFlipping Matrix..Matrix Flipped");
         int[][] matrixCopy = matrix;
         for (int row = 0; row < matrixSize ; row++){
             for (int col = 0; col < matrixSize; col++){
+                if (diagonalHighlight == col){
+                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                diagonalHighlight--;
+                } else {
 
+                }
             }
         }
     }
