@@ -74,16 +74,16 @@ public class Matrix {
         int x2 = matrixSize-1;
         int y2 = x2;
         System.out.print("\n\nFlipping Matrix..Matrix Flipped");
-        int[][] matrixFlipped = matrix;
+        // int[][] matrixFlipped = matrix;
         for (int row = 0; row < matrixSize ; row++){
             System.out.println();
             for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
-                System.out.printf("%s%d%s", COLOR, matrixFlipped[row][col], "\t");
+                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                 diagonalHighlight--;
                 } else {
                     swapMatrix(row, col, x2 ,y2);
-                    System.out.printf("%s%d%s", RESET, matrixFlipped[row][col], "\t");
+                    System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                 }
             }
         }
