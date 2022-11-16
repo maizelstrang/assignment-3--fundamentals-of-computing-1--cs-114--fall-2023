@@ -37,7 +37,7 @@ public class Matrix {
 
     //-----------------------------------------------------------------------------------------------------
     public void populateMatrix(){
-        int diagongalHighlight = matrixSize-1;
+        int diagonalHighlight = matrixSize-1;
 
         for (int row = 0; row < matrixSize ; row+=matrixSize ){
             for (int col = 0; col < matrixSize; col++){
@@ -51,9 +51,9 @@ public class Matrix {
         for (int row = 0; row< matrixSize; row++){
             System.out.println();
             for(int col = 0; col < matrixSize; col++){
-                if (diagongalHighlight == col){
+                if (diagonalHighlight == col){
                 System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                diagongalHighlight--;
+                diagonalHighlight--;
                 } else {
                 System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                 }
