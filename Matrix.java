@@ -1,20 +1,20 @@
 public class Matrix {
-    private int[][] table;
+    private int[][] array;
 
-    public void createTable(int size) {
-        table = new int[size][size];
+    public void createTable(int [][] table) {
+        array = table;
     }
     public void populateTable() {
-        for (int row = 0; row < table.length; row++){
-            for (int col = 0; col < table[row].length; col++){
-                table[row][col] = row*10+col;
+        for (int row = 0; row < array.length; row++){
+            for (int col = 0; col < array[row].length; col++){
+                array[row][col] = row*10+col;
             }
         }
     }
     public void returnTable() {
-        for(int i=0;i<table.length;i++) {
-            for(int j=0;j<table[i].length;j++) {
-                System.out.println(table[i][j]);
+        for(int i=0;i<array.length;i++) {
+            for(int j=0;j<array[i].length;j++) {
+                System.out.println(array[i][j]);
             }
         }
     }
