@@ -39,7 +39,7 @@ public class Matrix {
     public void populateMatrix(){
         int diagongalHighlight = matrixSize-1;
 
-        for (int row = 0; row < matrix.length ; row+=matrixSize ){
+        for (int row = 0; row < matrixSize ; row+=matrixSize ){
             for (int col = 0; col < matrixSize; col++){
                 matrix[row][col] += (col+row)+1;
             }
