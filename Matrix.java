@@ -12,7 +12,12 @@ public class Matrix {
             }
         }
     }
-    public int[][] returnTable(int RowIndex, int ColIndex) {
+    public int[][] returnTable(int[][]arr) {
+        for(int i=0;i<arr.length;i++) {
+            for(int j=0;j<arr[0].length;j++) {
+                table[i][j]=arr[i][arr[0].length-1-j];
+            }
+    }
         return table;
     }
 }
