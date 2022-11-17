@@ -95,5 +95,6 @@ public class Matrix {
             x1++;
             x2--;
         }
+        System.out.println("\n");
     }
 }

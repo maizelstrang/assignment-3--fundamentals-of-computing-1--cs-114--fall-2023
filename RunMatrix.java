@@ -2,9 +2,13 @@ import java.util.Scanner;
 
 public class RunMatrix {
     public static void main(String[] args){
+        int inputSize;
         Scanner input = new Scanner(System.in);
+        do {
         System.out.println("\nPlease input the desired matrix size:");
-        int inputSize = input.nextInt();
+        inputSize = input.nextInt();
+        } while (inputSize <0);
+
 
 
         Matrix userMatrix;
