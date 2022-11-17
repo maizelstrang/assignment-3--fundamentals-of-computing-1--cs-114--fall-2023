@@ -61,10 +61,10 @@ public class Matrix {
             System.out.println();
             for(int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
-                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                diagonalHighlight--;
+                    System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                    diagonalHighlight--;
                 } else {
-                System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+                    System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                 }
             }
         }
@@ -77,8 +77,9 @@ public class Matrix {
         int x1 = 0;
 
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
+
+        //This algorithm is for the odd matrix
         if (matrixSize%2 == 1){
-            //This algorithm is for the odd matrix
             for (int row = 0; row < matrixSize ; row++){
                 int y2 = matrixSize-1;
                 int y1 = 0;
@@ -86,35 +87,34 @@ public class Matrix {
 
                 for (int col = 0; col < matrixSize; col++){
                     if (diagonalHighlight == col){
-                    System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                    diagonalHighlight--;
+                        System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                        diagonalHighlight--;
                     } else {
-                    swap(x1, y1, x2, y2);
-                    y2--;
-                    y1++;
-                    System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+                        swap(x1, y1, x2, y2);
+                        y2--;
+                        y1++;
+                        System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                     }
                 }
                 x1++;
                 x2--;
             }
 
+        //Algorithm for an even matrix size
         } else {
-            //In case this is an even matrix, algorithm is slightly different below
             for (int row = 0; row < matrixSize ; row++){
                 int y2 = matrixSize-1;
                 int y1 = 0;
                 System.out.println();
-
                 for (int col = 0; col < matrixSize; col++){
                     if (diagonalHighlight == col){
-                    System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                    diagonalHighlight--;
+                        System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                        diagonalHighlight--;
                     } else {
-                    swap(x1, y1, x2, y2);
-                    y2--;
-                    y1++;
-                    System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+                        swap(x1, y1, x2, y2);
+                        y2--;
+                        y1++;
+                        System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
                     }
                 }
                 x1++;
