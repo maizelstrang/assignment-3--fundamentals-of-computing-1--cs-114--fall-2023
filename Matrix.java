@@ -13,11 +13,12 @@ public class Matrix {
     //-----------------------------------------------------------------------------------------------------
     private void swap(int x1, int y1, int x2, int y2){
         int temporary = matrix[x1][y1];
-        int point1 = matrix[x2][y2];
-        int point2 = temporary;
+        int swap1 = matrix[x2][y2];
+        int swap2 = temporary;
 
-        matrix[x1][y1] = point1;
-        matrix[x2][y2] = point2;
+        matrix[x1][y1] = swap1;
+        matrix[x2][y2] = swap2;
+
     }
 
     //-----------------------------------------------------------------------------------------------------
@@ -93,23 +94,26 @@ public class Matrix {
     public void flipMatrix(){
         int diagonalHighlight = matrixSize-1;
         int x2 = matrixSize-1;
-        int y2 = matrixSize-1;
+        int x1 = 0;
+
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
         for (int row = 0; row < matrixSize ; row++){
+            int y2 = matrixSize-1;
+            int y1 = 0;
             System.out.println();
             for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
                     System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                     diagonalHighlight--;
                 } else {
-                    swap(row, col, x2, y2);
+                    swap(x1, y1, x2, y2);
+                    y2--;
+                    y1++;
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
-
-                    if(y2 > 0){
-                        y2--;
-                    }
                 }
             }
+            x1++;
+            x2--;
         }
     }
 }
