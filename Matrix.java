@@ -78,7 +78,7 @@ public class Matrix {
 
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
         if (matrixSize%2 == 1){
-            //This algorithm is for the odd case
+            //This algorithm is for the odd matrix
             for (int row = 0; row < matrixSize ; row++){
                 int y2 = matrixSize-1;
                 int y1 = 0;
@@ -98,9 +98,9 @@ public class Matrix {
                 x1++;
                 x2--;
             }
-            System.out.println("\n");
-        }else {
-            //In case this is an even number, algorithm is slightly different below
+
+        } else {
+            //In case this is an even matrix, algorithm is slightly different below
             for (int row = 0; row < matrixSize ; row++){
                 int y2 = matrixSize-1;
                 int y1 = 0;
