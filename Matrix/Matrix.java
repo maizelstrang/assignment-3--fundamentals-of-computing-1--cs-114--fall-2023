@@ -17,13 +17,13 @@ public class Matrix {
             System.out.println();
             }
         }
-    // public void populateTable() {
-    //     for (int row = 0; row < array.length; row++){
-    //         for (int col = 0; col < array[row].length; col++){
-    //             array[row][col] = row*10+col;
-    //         }
-    //     }
-    // }
+    public void populateTable() {
+        for (int row = 0; row < array.length; row++){
+            for (int col = 0; col < array[row].length; col++){
+                array[row][col] = row*10+col;
+            }
+        }
+    }
     public void printTable() {
         for (int row =0;row < array.length;row++) {
             for(int col = 0;col < array[row].length;col++){
