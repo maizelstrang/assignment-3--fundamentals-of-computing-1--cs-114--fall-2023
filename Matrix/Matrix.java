@@ -1,6 +1,5 @@
 package Matrix;
 
-import java.util.*;
 public class Matrix {
     private int size;
     private int[][] array;
