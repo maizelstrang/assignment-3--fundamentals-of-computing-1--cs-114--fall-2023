@@ -18,6 +18,9 @@ public class Matrix {
             }
         }
     public void populateTable() {
+        System.out.println();
+        System.out.println("Populating Table...");
+        System.out.println();
         for (int row = 0; row < array.length; row++){
             for (int col = 0; col < array[row].length; col++){
                 array[row][col] = row*10+col;
