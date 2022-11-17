@@ -9,8 +9,6 @@ public class RunMatrix {
         inputSize = input.nextInt();
         } while (inputSize <0);
 
-
-
         Matrix userMatrix;
         userMatrix = new Matrix();
 
