@@ -79,7 +79,8 @@ public class Matrix {
         System.out.print("\n\nFlipping Matrix...Matrix Flipped");
 
         //This algorithm is for the odd matrix
-        if (matrixSize%2 == 1){
+        // if (matrixSize%2 == 1){
+
             for (int row = 0; row < matrixSize ; row++){
                 int y2 = matrixSize-1;
                 int y1 = 0;
@@ -90,10 +91,12 @@ public class Matrix {
                         System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                         diagonalHighlight--;
                     } else {
+
                         swap(x1, y1, x2, y2);
                         y2--;
                         y1++;
                         System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+
                     }
                 }
                 x1++;
@@ -101,35 +104,36 @@ public class Matrix {
             }
 
         //Algorithm for an even matrix size
-        } else {
-            for (int row = 0; row < matrixSize ; row++){
-                int y2 = matrixSize-1;
-                int y1 = 0;
-                System.out.println();
+        // }
+        // else {
+            // for (int row = 0; row < matrixSize ; row++){
+            //     int y2 = matrixSize-1;
+            //     int y1 = 0;
+            //     System.out.println();
 
-                for (int col = 0; col < matrixSize; col++){
-                    if (diagonalHighlight == col){
-                        System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                        diagonalHighlight--;
-                        // if (y1-1 == y2 && x1+1 == x2){
-                        //     swap(x1, y1, x2, y2);
-                        // }
+            //     for (int col = 0; col < matrixSize; col++){
+            //         if (diagonalHighlight == col){
+            //             System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+            //             diagonalHighlight--;
+            //             // if (y1-1 == y2 && x1+1 == x2){
+            //             //     swap(x1, y1, x2, y2);
+            //             // }
 
-                    } else {
-                        swap(x1, y1, x2, y2);
-                        y2--;
-                        y1++;
-                        System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
-                        if (x1 == (matrixSize/2)-1 && y2 == matrixSize-1){
-                            matrix[row][col]++;
-                            System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
-                        }
+            //         } else {
+            //             swap(x1, y1, x2, y2);
+            //             y2--;
+            //             y1++;
+            //             System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+            //             if (x1 == (matrixSize/2)-1 && y2 == matrixSize-1){
+            //                 matrix[row][col]++;
+            //                 System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
+            //             }
 
-                    }
-                }
-                x1++;
-                x2--;
-            }
-        }
+            //         }
+            //     }
+            //     x1++;
+            //     x2--;
+            // }
+        // }
     }
 }
