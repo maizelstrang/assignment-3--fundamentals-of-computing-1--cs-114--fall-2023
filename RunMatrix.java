@@ -14,5 +14,7 @@ public class RunMatrix {
         System.out.println();
         System.out.println("The size of your matrix is: " +
                             SizeInput + " x " + SizeInput);
+        System.out.println(" ");
+        table1.createTable();
     }
 }
