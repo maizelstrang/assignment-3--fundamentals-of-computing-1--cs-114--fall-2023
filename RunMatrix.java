@@ -4,12 +4,14 @@ import Matrix.Matrix;
 public class RunMatrix {
     public static void main(String[] args){
         Matrix table1;
+        int Size;
 
         Scanner SizeScan = new Scanner(System.in);
 
         System.out.print("Please enter the size of your matrix: ");
         String SizeInput = SizeScan.nextLine();
-        table1 = new Matrix(5);
+        Size = Integer.parseInt(SizeInput);
+        table1 = new Matrix(Size);
         System.out.println();
         System.out.println();
         System.out.println("The size of your matrix is: " +
