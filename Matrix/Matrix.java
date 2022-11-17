@@ -5,6 +5,9 @@ public class Matrix {
     private int size;
     private int[][] array;
 
+    public Matrix(int entsize){
+        size = entsize;
+    }
     public void createTable() {
         array = new int[size][size];
         //make table here
