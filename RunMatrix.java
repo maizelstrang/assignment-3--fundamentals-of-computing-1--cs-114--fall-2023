@@ -14,12 +14,15 @@ public class RunMatrix {
 
         System.out.println("Printing matrix with default values...");
 
-        for (int column=0; column<matrixSize; column++) {
-            for (int row=0; row<matrixSize; row++) {
-            System.out.print("0  ");
+        int [][] table = new int [matrixSize][matrixSize];
+
+        for (int row=0; row<matrixSize; row++) {
+            for (int col=0; col<matrixSize; col++) {
+                System.out.print(table[row][col] +"\t");
             }
             System.out.print("\n");
         }
+
 
 
 
