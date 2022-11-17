@@ -1,5 +1,6 @@
 /*
- * I can't count the times I wanted to sit down and cry making this algorithm
+ * I can't count the times I wanted to sit down and cry making this algorithm.
+ * Reflecting across the line y=x makes SO MUCH MORE SENSE.
  * Sincerely,
  * Past Justin
  */
@@ -16,7 +17,6 @@ public class Matrix {
        matrix = new int[size][size];
 
      }
-
 
      public void populate() {
         for(int i = 0; i < size; i++) {
@@ -42,7 +42,7 @@ public class Matrix {
             }
          System.out.println();
         }
-     }
+    }
 
       public void swapValues() {
         int cellToHighlight = size - 1;
@@ -55,7 +55,7 @@ public class Matrix {
                     System.out.print(ANSI_RESET);
                 }
                 int[][] rotatedMatrix = new int[size][size];
-                rotatedMatrix[i][j] = matrix[size - 1 - j][size - 1 - i];
+                rotatedMatrix[i][j] = matrix[size - 1 - i][size - 1 - j];
                 System.out.print("\t" + rotatedMatrix[i][j] + " ");
 
               }
