@@ -28,12 +28,32 @@ public class Matrix {
         }
      }
 
+     public void swapValues(int value1, int value2) {
+        int temp = 0;
+        value1 = temp;
+        value1 = value2;
+        value2 = temp;
+     }
+
       public void transpose() {
-          for(int i = 0; i < matrix.length; i++) {
-              for(int j = i + 1; j < matrix.length; j++) {
-                int t = matrix[i][j];
-                matrix[i][j] = matrix[j][i];
-                matrix[j][i] = t;
+        //Diagonal ends at [size - 1][0]
+
+
+        int diag = matrix[0][size - 1];
+
+          for(int row = 0; row < size; row++) {
+            int topCells = matrix[0][row];
+            int bottomCells = matrix[size - 1][size - (row + 1)];
+            int diagonals = matrix[row][size - (row + 1)];
+            //swapValues(topCells, bottomCells);
+            //System.out.print(topCells + " ");
+            //System.out.print(bottomCells + " ");
+            System.out.print(diagonals + " ");
+              for(int col = 0; col < size; col++) {
+                //topCells = matrix[row][col];
+
+                //System.out.print(bottomCells);
+
               }
 
           }
