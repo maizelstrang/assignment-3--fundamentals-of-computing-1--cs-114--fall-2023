@@ -1,3 +1,8 @@
+/*
+ * I can't count the times I wanted to sit down and cry making this algorithm
+ * Sincerely,
+ * Past Justin
+ */
 
 public class Matrix {
     private String ANSI_YELLOW = "\u001B[33m";
@@ -22,14 +27,14 @@ public class Matrix {
      }
 
      public void print() {
-        int highlight = size - 1;
+        int cellToHighlight = size - 1;
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
 
-                if(highlight == j) {
+                if(cellToHighlight == j) {
                     System.out.print(ANSI_YELLOW);
-                    highlight--;
+                    cellToHighlight--;
                 } else {
                     System.out.print(ANSI_RESET);
                 }
@@ -39,20 +44,13 @@ public class Matrix {
         }
      }
 
-     public void swapCells(int value1, int value2) {
-        int temp = 0;
-        value1 = temp;
-        value1 = value2;
-        value2 = temp;
-     }
-
       public void swapValues() {
-        int highlight = size - 1;
+        int cellToHighlight = size - 1;
           for(int i = 0; i < size; i++) {
               for(int j = 0; j < size; j++) {
-                if(highlight == j) {
+                if(cellToHighlight == j) {
                     System.out.print(ANSI_YELLOW);
-                    highlight--;
+                    cellToHighlight--;
                 } else {
                     System.out.print(ANSI_RESET);
                 }

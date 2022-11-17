@@ -28,8 +28,6 @@ public class RunMatrix {
         System.out.println("Transposed Matrix:");
         System.out.println();
         matrix.swapValues();
-
-
         System.out.println();
 
     }
