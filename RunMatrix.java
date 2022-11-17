@@ -6,9 +6,9 @@ public class RunMatrix {
         Scanner input = new Scanner(System.in);
 
         do {
-        System.out.println("\nPlease input the desired matrix size:");
+        System.out.println("\nPlease input the desired matrix size(Greater than One):");
         inputSize = input.nextInt();
-        } while (inputSize <0);
+        } while (inputSize <1);
 
         Matrix userMatrix;
         userMatrix = new Matrix();

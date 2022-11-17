@@ -13,13 +13,10 @@ public class Matrix {
     //-----------------------------------------------------------------------------------------------------
     private void swap(int x1, int y1, int x2, int y2){
         int temporary = matrix[x1][y1];
-        int swap1 = matrix[x2][y2];
-        int swap2 = temporary;
 
-        matrix[x1][y1] = swap1;
-        matrix[x2][y2] = swap2;
+        matrix[x1][y1] = matrix[x2][y2];
+        matrix[x2][y2] = temporary;
     }
-
     //-----------------------------------------------------------------------------------------------------
     public void printMatrix(){
         int diagonalHighlight = matrixSize-1;
