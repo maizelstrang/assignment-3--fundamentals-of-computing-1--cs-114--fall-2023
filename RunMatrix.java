@@ -16,5 +16,7 @@ public class RunMatrix {
                             SizeInput + " x " + SizeInput);
         System.out.println(" ");
         table1.createTable();
+        table1.populateTable();
+        table1.printTable();
     }
 }
