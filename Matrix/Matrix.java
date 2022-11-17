@@ -2,10 +2,10 @@ package Matrix;
 
 import java.util.*;
 public class Matrix {
+    private int size;
     private int[][] array;
 
-    public int createTable(int size) {
-        return size;
+    public void createTable() {
         array = new int[size][size];
         //make table here
         for (int row =0;row < array.length;row++) {
