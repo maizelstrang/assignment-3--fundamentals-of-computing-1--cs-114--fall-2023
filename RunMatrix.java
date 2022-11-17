@@ -25,10 +25,11 @@ public class RunMatrix {
         System.out.println();
         matrix.print();
         System.out.println();
-        matrix.transpose();
-       // System.out.println("Transposed Matrix:");
+        System.out.println("Transposed Matrix:");
         System.out.println();
-        //matrix.print();
+        matrix.swapValues();
+
+
         System.out.println();
 
     }
