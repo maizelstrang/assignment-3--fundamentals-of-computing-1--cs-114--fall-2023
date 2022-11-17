@@ -16,9 +16,9 @@ public class RunMatrix {
         System.out.println();
         System.out.println("You requested a Matrix with size: " + size + " x " + size);
         System.out.println();
-        //System.out.println("Regular Matrix:");
+        System.out.println("Regular Matrix:");
         System.out.println();
-        //matrix.print();
+        matrix.print();
         System.out.println();
         matrix.populate();
         System.out.println("Populated Matrix:");
