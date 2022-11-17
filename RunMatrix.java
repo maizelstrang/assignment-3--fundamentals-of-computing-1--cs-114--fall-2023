@@ -17,6 +17,8 @@ public class RunMatrix {
         System.out.println(" ");
         table1.createTable();
         System.out.println();
+        System.out.println("Populating Table...");
+        System.out.println();
         table1.populateTable();
         table1.printTable();
     }
