@@ -16,13 +16,23 @@ public class RunMatrix {
 
         int [][] table = new int [matrixSize][matrixSize];
 
-        for (int row=0; row<matrixSize; row++) {
-            for (int col=0; col<matrixSize; col++) {
+        for (int row=0; row < matrixSize; row++) {
+            for (int col=0; col < matrixSize; col++) {
                 System.out.print(table[row][col] +"\t");
             }
             System.out.print("\n");
         }
 
+        System.out.println("Populating matrix with values...");
+
+        for (int row=0; row < matrixSize; row++) {
+            for (int col=0; col < matrixSize; col++) {
+                table[row][col] = row * matrixSize + col +1;
+                //"+1" makes it so it won't start at 0
+                System.out.print(table[row][col] +"\t");
+            }
+            System.out.print("\n");
+        }
 
 
 
