@@ -36,5 +36,3 @@ public class Matrix {
             }
     }
 }
-
-//https://stackoverflow.com/questions/20519100/java-how-to-return-in-a-method-multidimensional-array-without-aliasing
