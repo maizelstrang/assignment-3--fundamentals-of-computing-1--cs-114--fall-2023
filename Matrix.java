@@ -24,24 +24,23 @@ public class Matrix {
     public void printMatrix(){
         int diagonalHighlight = matrixSize-1;
         for (int row = 0; row < matrixSize ; row++ ){
-                for (int col = 0; col < matrixSize; col++){
-                    matrix[row][col] = 0;
-                }
+            for (int col = 0; col < matrixSize; col++){
+            matrix[row][col] = 0;
+            }
         }
         System.out.println("\nPrinting matrix with default values:");
 
         for (int row = 0; row< matrixSize; row++){
-                System.out.println();
-                for(int col = 0; col < matrixSize; col++){
-                    if (diagonalHighlight == col){
+            System.out.println();
+            for(int col = 0; col < matrixSize; col++){
+                if (diagonalHighlight == col){
                     System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                     diagonalHighlight--;
-
-                    } else {
+                } else {
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
-                    }
                 }
             }
+        }
     }
 
     //-----------------------------------------------------------------------------------------------------
@@ -83,16 +82,16 @@ public class Matrix {
             int y1 = 0;
             System.out.println();
             for (int col = 0; col < matrixSize; col++){
-                if (diagonalHighlight == col){
-                    System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
-                    diagonalHighlight--;
-                } else {
+            if (diagonalHighlight == col){
+                System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
+                diagonalHighlight--;
+            } else {
                     swap(x1, y1, x2, y2);
                     y2--;
                     y1++;
                     System.out.printf("%s%d%s", RESET, matrix[row][col], "\t");
-                }
             }
+        }
             x1++;
             x2--;
         }
