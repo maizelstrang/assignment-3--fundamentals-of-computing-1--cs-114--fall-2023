@@ -5,7 +5,7 @@ public class Matrix {
     final String RESET = "\033[39m";
 
     //-----------------------------------------------------------------------------------------------------
-    public void createMatrix (int size){
+    public void createMatrix(int size){
         matrix = new int[size][size];
         matrixSize = size;
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
@@ -25,7 +25,7 @@ public class Matrix {
 
         for (int row = 0; row < matrixSize; row++){
             System.out.println();
-            for(int col = 0; col < matrixSize; col++){
+            for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
                     System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                     diagonalHighlight--;
@@ -52,7 +52,7 @@ public class Matrix {
 
         for (int row = 0; row < matrixSize; row++){
             System.out.println();
-            for(int col = 0; col < matrixSize; col++){
+            for (int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
                     System.out.printf("%s%d%s", COLOR, matrix[row][col], "\t");
                     diagonalHighlight--;
