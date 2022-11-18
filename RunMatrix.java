@@ -14,9 +14,17 @@ public class RunMatrix {
         userMatrix = new Matrix();
 
         userMatrix.createMatrix(inputSize);
+
+        System.out.println("\nPrinting matrix with default values:");
+
         userMatrix.printMatrix();
         userMatrix.populateMatrix();
-        userMatrix.flipMatrix();
+        userMatrix.flipMatrixV1();
+
+        System.out.println("\nPrinting flipped matrix:");
+
+        userMatrix.printMatrix();
+
 
     }
 }
