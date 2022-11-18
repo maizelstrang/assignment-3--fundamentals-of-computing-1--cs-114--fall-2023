@@ -137,7 +137,7 @@ public class Matrix {
     public void flipMatrixV1(){
         for (int col = 0; col < (matrixSize-1); col++){
             for (int row = 0; row < (matrixSize-1)-col ; row++){
-                swap(row, col, ((matrixSize-1)- row)-row, ((matrixSize-1)-col));
+                swap(row, col, ((matrixSize-1)- row), ((matrixSize-1)-col));
             }
         }
         System.out.println();
