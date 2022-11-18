@@ -10,6 +10,7 @@ public class Matrix {
         matrixSize = size;
         System.out.println("\n" + "Created Matrix size is: " + size + " x " + size);
     }
+
     //-----------------------------------------------------------------------------------------------------
     private void swap(int x1, int y1, int x2, int y2){
         int temporary = matrix[x1][y1];
