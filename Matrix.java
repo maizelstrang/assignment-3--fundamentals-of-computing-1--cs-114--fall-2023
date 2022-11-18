@@ -18,11 +18,12 @@ public class Matrix {
         matrix[x1][y1] = matrix[x2][y2];
         matrix[x2][y2] = temporary;
     }
+
     //-----------------------------------------------------------------------------------------------------
     public void printMatrix(){
         int diagonalHighlight = matrixSize-1;
 
-        for (int row = 0; row< matrixSize; row++){
+        for (int row = 0; row < matrixSize; row++){
             System.out.println();
             for(int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
@@ -49,7 +50,7 @@ public class Matrix {
         System.out.println("\n\nPopulating Matrix...matrix populated");
         System.out.println("\nPrinting matrix:");
 
-        for (int row = 0; row< matrixSize; row++){
+        for (int row = 0; row < matrixSize; row++){
             System.out.println();
             for(int col = 0; col < matrixSize; col++){
                 if (diagonalHighlight == col){
@@ -65,8 +66,8 @@ public class Matrix {
     //--------------------------------------------------------------------------------------------------
     public void flipMatrix(){
         for (int col = 0; col < (matrixSize-1); col++){
-            for (int row = 0; row < (matrixSize-1)-col ; row++){
-                swap(row, col, ((matrixSize-1)- row), ((matrixSize-1)-col));
+            for (int row = 0; row < (matrixSize-1) - col; row++){
+                swap(row, col, ((matrixSize-1) - row), ((matrixSize-1) - col));
             }
         }
         System.out.println();
