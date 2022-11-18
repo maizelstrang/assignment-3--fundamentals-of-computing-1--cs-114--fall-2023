@@ -20,11 +20,6 @@ public class Matrix {
     //-----------------------------------------------------------------------------------------------------
     public void printMatrix(){
         int diagonalHighlight = matrixSize-1;
-        // for (int row = 0; row < matrixSize ; row++ ){
-        //     for (int col = 0; col < matrixSize; col++){
-        //     matrix[row][col] = 0;
-        //     }
-        // }
 
         for (int row = 0; row< matrixSize; row++){
             System.out.println();
