@@ -19,7 +19,7 @@ Write a program that does the following:
 5. Flips (or swaps) the contents of the matrix along the diagonal from top right to bottom left, highlighting the elements that comprise the diagonal and leaving them untouched/unswapped
 6. Prints the flipped matrix
 
-**Note**: A movie of how this assignment should behave in its resolved state is available [here](http://vanegas.cs.hartford.edu/uploads/videos/flipping-a-matrix-along-a-diagonal.mp4).
+**Note**: A movie of how this assignment should behave in its resolved state is available [here](http://vanegas.cs.hartford.edu/uploads/videos/matrix-flip-along-diagonal--java.mp4).
 
 **Note**: The values used to populate the matrix are arbitrary and only in place to make each cell easy to read.
 
@@ -60,7 +60,7 @@ This repo contains the following files, all required to carry out this assignmen
 ---
 
 ## ❖ Due ❖
-Wednesday, 18 November 2022, at 5:00 PM.
+Friday, 18 November 2022, at 5:00 PM.
 
 ---
 
