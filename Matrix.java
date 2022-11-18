@@ -1,8 +1,7 @@
 /*
- * I can't count the times I wanted to sit down and cry making this algorithm.
- * Reflecting across the line y=x makes SO MUCH MORE SENSE.
+ * I took the ideas from the intended algorithm and made it more ~epic and fast~
  * Sincerely,
- * Past Justin
+ * Justin
  */
 
 public class Matrix {
