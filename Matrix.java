@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Matrix {
-    public static void main(String[] args){
+
+    public void matrixAssignment(){
 
         String yellow = "\u001B[33m";
         String white = "\u001B[37m";
