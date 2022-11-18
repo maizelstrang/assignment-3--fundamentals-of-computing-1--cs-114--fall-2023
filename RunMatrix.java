@@ -19,7 +19,7 @@ public class RunMatrix {
 
         userMatrix.printMatrix();
         userMatrix.populateMatrix();
-        userMatrix.flipMatrixV1();
+        userMatrix.flipMatrix();
 
         System.out.println("\nPrinting flipped matrix:");
 

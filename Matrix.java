@@ -67,7 +67,7 @@ public class Matrix {
     }
 
     //--------------------------------------------------------------------------------------------------
-    public void flipMatrixV1(){
+    public void flipMatrix(){
         for (int col = 0; col < (matrixSize-1); col++){
             for (int row = 0; row < (matrixSize-1)-col ; row++){
                 swap(row, col, ((matrixSize-1)- row), ((matrixSize-1)-col));
